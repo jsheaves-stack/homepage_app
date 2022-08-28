@@ -1,0 +1,150 @@
+html {
+  background-color: #222;
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#root {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.App {
+  height: calc(100% - 5em);
+  width: calc(100% - 5em);
+
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  grid-gap: 5em;
+}
+
+.Section {
+  position: relative;
+  display: grid;
+  grid-template-rows: 5em 1fr;
+  grid-gap: 1em;
+
+  color: white;
+  text-decoration: none;
+}
+
+.Section-edit {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  right: -1.38em;
+  top: 0.2em;
+}
+
+.Section-title {
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.Section-title > div {
+  position: relative;
+}
+
+.Section-title > span {
+  font-weight: 600;
+}
+
+.Section-body {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-gap: 2em;
+  grid-auto-rows: 3em;
+  grid-auto-flow: row;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.Section-body-edit {
+  grid-auto-rows: 5em;
+  grid-gap: 1em;
+}
+
+.Section-item {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  font-size: 1.5em;
+  transition: font-size 0.5s;
+}
+
+.Section-item > a {
+  font-weight: 600;
+  font-size: 1.25em;
+  transition: font-size 0.5s;
+}
+
+.Section-item > a:hover {
+  font-size: 1.5em;
+  transition: font-size 0.5s;
+}
+
+.Section-item input {
+  height: 2em;
+  font-size: 16px;
+}
+
+.Section-item-edit {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 40%;
+}
+
+.Section-item-edit input {
+  width: 100%;
+}
+
+.Save-button {
+  width: 7em;
+  height: 2.5em;
+  border-bottom: 2px solid #575757;
+  border-left: 1px solid #575757;
+  border-right: 1px solid #575757;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-weight: 600;
+  align-self: start;
+}
+
+.Delete-button {
+  position: absolute;
+  right: -3em;
+  top: 0.5em;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.Button {
+  cursor: pointer;
+  background-color: gray;
+  border-radius: 11px;
+}
+
+.Edit-button {
+  padding: 5px;
+}
